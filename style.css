@@ -1,183 +1,146 @@
 body{
     background-color: darkseagreen;
-    overflow-x: scroll;
-    overflow-y: auto;
-    margin: 0;
-    padding: 0;
 }
 
-
-h3{
+#start{
     margin: 0;
-    position: relative;
-    margin-top: 8%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+
+
+    .button-74 {
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        border-radius: 30px;
+        box-shadow: #422800 4px 4px 0 0;
+        color: #422800;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 0 18px;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation; 
+    }
+    
+    .button-74:hover {
+        background-color: #fff;
+    }
+    
+    .button-74:active {
+        box-shadow: #422800 2px 2px 0 0;
+        transform: translate(2px, 2px);
+    }
+    
+    @media (min-width: 768px) {
+        #button-74 {
+        min-width: 120px;
+        padding: 0 25px; 
+        }
+    }
+
+    
+}    
+
+h1{
     color: #422800;
-    text-align: center;
-    font-family: 'Gill Sans', bold, sans-serif;
+    font-family: 'Gill Sans', sans-serif;
     font-style: bold;
     font-size: 3rem;
 }
 
-p{
+p {
+    color: #422800;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: x-large
+}
+
+
+
+#question{
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: bold;   
+    color: #422800; 
+    font-size: 2rem;
     margin: 0;
-    position: relative;
-    top: 18%;
+    position: absolute;
+    top: 25%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    color: #422800;
     text-align: center;
-    font-family: 'Gill Sans', bold, sans-serif;
-    font-size: x-large
-
 }
 
+#choices{
 
-a{
-    color: #422800;
-}
-
-/* Add a black background color to the top navigation */
-.topnav {
-    margin: 0;
+    margin: 5px;
     position: absolute;
-    top: 5%;
-    left: 80%;
+    font-family: 'Gill Sans', sans-serif;
+    color: #422800;
+    top: 55%;
+    left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    background-color: #422800;
-    font-family: 'Gill Sans', sans-serif;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #fbeee0;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #fbeee0 ;
-    color: black;
-  }
 
-  .cards {
+    .choice {
+        background-color: #fbeee0; 
+        border: 1px solid #422800;
+        color: #422800;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0 5px 0;
+        font-size: 16px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 5px;
-    row-gap: 10px;
-    margin: 5%;
-    margin-top: 3%;
+    .choice button:not(:last-child) {
+        border-bottom: none; 
     }
     
-    
-  .card {
-    
-    border: 2px solid #e7e7e7;
-    
-    border-radius: 4px;
-    display: flex;
-    background-color: #fbeee0;
-    width: 300px;
-    height: 200px;
+    .choice:hover {
+        background-color: #fff;
+    }
+}
+
+#score{
+    margin: 0;
+    position: absolute;
     font-family: 'Gill Sans', sans-serif;
     color: #422800;
-    padding: 3px 3px;
-    margin: 5px 5px 5px 5px;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-
-  .icon {
-    width: 25px;
-    height: 25px;
-  }
-
-  .card-icons {
-    margin: 5px;
-    text-align: center;
-  }
-
-.img-icon {
-  height: 50px !important;
-  width: auto;
+    font-size: 2rem;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
-img {
-  padding:0px;
-    margin:0px;
-}
+#countdown {
+    margin: 0;
+    position: absolute;
+    font-family: 'OCR A Std', monospace;
+    color: #422800;
+    font-size: 2rem;
+    top: 15%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 
-.icon-top {
-  height: 20px !important;
-  width: auto;
-  position: absolute;
 }
-
-.container {
-  justify-content: center;
-  display: flex;
-}
-.footer {
-  position: relative;
-  bottom: 0;
-  display: inline-block;
-  text-align: center;
-  background-color: #5d945b !important;
-  padding: 10px;
-  width: 100% !important;
-  margin: 0;
-}
-
-.card-book {
-    
-  border: 2px solid #e7e7e7;
   
-  border-radius: 4px;
-  display: flex;
-  background-color: #fbeee0;
-  width: 300px;
-  height: 150px;
-  font-family: 'Gill Sans', sans-serif;
-  color: #422800;
-  padding: 3px 3px;
-  margin: 5px 5px 5px 5px;
-  cursor: pointer;
-  display: block;
-  text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
 
-div.click-to-top span {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #333;
-  color: #fff;
-}
 
-div.click-to-top:hover span {
-  display: block;
-}
 
-  
+
+
+
 
