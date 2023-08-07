@@ -2,7 +2,6 @@ body{
     background-color: darkseagreen;
     overflow-x: hidden;
     overflow-y: auto;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
 }
