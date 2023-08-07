@@ -2,13 +2,16 @@ body{
     background-color: darkseagreen;
     overflow-x: hidden;
     overflow-y: auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 
 h3{
     margin: 0;
-    position: absolute;
-    top: 30%;
+    position: relative;
+    margin-top: 8%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -21,8 +24,8 @@ h3{
 
 p{
     margin: 0;
-    position: absolute;
-    top: 45%;
+    position: relative;
+    top: 18%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -33,6 +36,7 @@ p{
 
 }
 
+
 a{
     color: #422800;
 }
@@ -41,7 +45,7 @@ a{
 .topnav {
     margin: 0;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 80%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -72,39 +76,92 @@ a{
     color: black;
   }
 
-  #cards {
-    margin: 0;
-    position: absolute;
-    top: 200%;
-    left: 60%;
-    text-align: center;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+  .cards {
 
-   
-    .card{
-        background-color: #fbeee0;
-        width: 250px;
-        height: 330px;
-        font-family: 'Gill Sans', sans-serif;
-        color: #422800;
-        padding: 10px 24px;
-        margin: 5px 5px 5px 5px;
-        cursor: pointer;
-        display: block;
-        float: left;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 10px;
+    margin: 5%;
+    margin-top: 3%;
     }
     
-    .card button:not(:last-child) {
-        border-right: none; 
-      }
-
-    .card:after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-
+    
+  .card {
+    
+    border: 2px solid #e7e7e7;
+    
+    border-radius: 4px;
+    display: flex;
+    background-color: #fbeee0;
+    width: 300px;
+    height: 200px;
+    font-family: 'Gill Sans', sans-serif;
+    color: #422800;
+    padding: 3px 3px;
+    margin: 5px 5px 5px 5px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
   }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .card-icons {
+    margin: 5px;
+    text-align: center;
+  }
+
+.img-icon {
+  height: 50px !important;
+  width: auto;
+}
+
+img {
+  padding:0px;
+    margin:0px;
+}
+
+.icon-top {
+  height: 20px !important;
+  width: auto;
+  position: absolute;
+}
+
+.container {
+  justify-content: center;
+  display: flex;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+  text-align: center;
+  background-color: #5d945b !important;
+  padding: 10px;
+  width: 100% !important;
+  margin: 0;
+}
+
+.card-book {
+    
+  border: 2px solid #e7e7e7;
+  
+  border-radius: 4px;
+  display: flex;
+  background-color: #fbeee0;
+  width: 300px;
+  height: 150px;
+  font-family: 'Gill Sans', sans-serif;
+  color: #422800;
+  padding: 3px 3px;
+  margin: 5px 5px 5px 5px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
   
 

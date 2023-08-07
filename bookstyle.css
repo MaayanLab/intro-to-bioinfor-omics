@@ -67,6 +67,27 @@ p2{
     color: black;
   }
 
+.card{
+    background-color: #fbeee0;
+    width: 250px;
+    height: 200px;
+    font-family: 'Gill Sans', sans-serif;
+    color: #422800;
+    padding: 10px 24px;
+    margin: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.card button:not(:last-child) {
+    border-right: none; 
+  }
+
+.card:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 #chap_cards {
     margin: 0;
     position: absolute;
@@ -76,31 +97,7 @@ p2{
     margin-right: -50%;
     transform: translate(-50%, -50%);
 
-    .card{
-        background-color: #fbeee0;
-        width: 250px;
-        height: 200px;
-        font-family: 'Gill Sans', sans-serif;
-        color: #422800;
-        padding: 10px 24px;
-        margin: 5px 5px 5px 5px;
-        cursor: pointer;
-        display: block;
-        float: left;
-
-    }
-    
-    .card button:not(:last-child) {
-        border-right: none; 
-      }
-
-    .card:after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-
-  }
+}
 
 a{
     color: #422800;
