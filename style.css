@@ -1,6 +1,6 @@
 body{
     background-color: darkseagreen;
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: auto;
     margin: 0;
     padding: 0;
