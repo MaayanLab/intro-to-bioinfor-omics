@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,32 @@
     <title>SigCom LINCS Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="container">
-        <div id="start"> 
+        <div id="start">
 
-            <h1 id = "title">Welcome!</h1>
-            <p id = "text">You are about to start a quiz.</p>  
+            <h1 id="title">Welcome!</h1>
+            <p id="text">You are about to start a quiz.</p>
             <button class="button-74" role="button">Let's Go!</button>
         </div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
             <div id="choices">
-                <button class="choice" id="a" onclick="check('a')"></button> 
-                <button class="choice" id="b" onclick="check('b')"></button>  
-                <button class="choice" id="c" onclick="check('c')"></button> 
-                <button class="choice" id="d" onclick="check('d')"></button> 
-                <button class="choice" id="e" onclick="check('e')"></button> 
+                <button class="choice" id="a" onclick="check('a')"></button>
+                <button class="choice" id="b" onclick="check('b')"></button>
+                <button class="choice" id="c" onclick="check('c')"></button>
+                <button class="choice" id="d" onclick="check('d')"></button>
+                <button class="choice" id="e" onclick="check('e')"></button>
             </div>
 
-            <div id = "countdown"></div>
+            <div id="countdown"></div>
         </div>
 
         <div id="score" style="display: none"></div>
 
     </div>
-    <script src= "SigCom LINCS.js"></script>
+    <script src="SigCom LINCS.js"></script>
+</body>
+
+</html>
