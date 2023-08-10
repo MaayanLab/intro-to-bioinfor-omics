@@ -1,2 +1,4 @@
-# Bioinfor-omics
+# Bioinfor-Omics
 The interactive course can be accessed here: https://maayanlab.github.io/intro-to-bioinfor-omics/
+
+Introduction to Bioinfor-Omics is a website which will host the course materials for the Ma'ayan Lab's free online introductory course called "Introduction to Bioinfor-Omics", which is currently under development. It will host lecture notes, quizzes, excercises, and videos for each chapter in the online course book. The contents of the course will include chapters on 15 of the bioninformatics tools developed in the lab. This repository mainly consists of HTML and CSS files for the website, as well as code for a quiz about SigCom LINCs (SigCom LINCS.html and SigCom LINCS.js), a data and metadata search engine for gene expression signatures collected for the LINCS Common Fund Program. Finally, I have provided a template for chapter quizzes (template.html and template.js) for users who wish to make quizzes for other chapters. 
